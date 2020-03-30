@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="com.snapdeal.testcases.ProfileUpdateTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="addressUpdate"/>
+        </methods>
+      </class> <!-- com.snapdeal.testcases.ProfileUpdateTest -->
+      <class name="com.snapdeal.testcases.HomePageTest">
+        <methods>
+          <include name="selectProduct"/>
+          <include name="validateTag"/>
+          <include name="tearDown"/>
+          <include name="browserInvoke"/>
+          <include name="validatePageTitle"/>
+        </methods>
+      </class> <!-- com.snapdeal.testcases.HomePageTest -->
+      <class name="com.snapdeal.testcases.LoginTest">
+        <methods>
+          <include name="checkScrollDown"/>
+          <include name="validateTitle"/>
+          <include name="validateUserLogin"/>
+          <include name="quit"/>
+          <include name="browserInitiate"/>
+        </methods>
+      </class> <!-- com.snapdeal.testcases.LoginTest -->
+      <class name="com.snapdeal.testcases.ProductTest">
+        <methods>
+          <include name="addingInCart"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.snapdeal.testcases.ProductTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

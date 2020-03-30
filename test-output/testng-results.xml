@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="20538" started-at="2020-03-30T14:05:20 IST" finished-at="2020-03-30T14:05:41 IST">
+    <groups>
+      <group name="First Group">
+        <method signature="LoginTest.checkScrollDown()[pri:1, instance:com.snapdeal.testcases.LoginTest@7d0587f1]" name="checkScrollDown" class="com.snapdeal.testcases.LoginTest"/>
+        <method signature="LoginTest.validateTitle()[pri:2, instance:com.snapdeal.testcases.LoginTest@7d0587f1]" name="validateTitle" class="com.snapdeal.testcases.LoginTest"/>
+        <method signature="LoginTest.validateUserLogin()[pri:3, instance:com.snapdeal.testcases.LoginTest@7d0587f1]" name="validateUserLogin" class="com.snapdeal.testcases.LoginTest"/>
+      </group> <!-- First Group -->
+    </groups>
+    <test name="Chrome test" duration-ms="20538" started-at="2020-03-30T14:05:20 IST" finished-at="2020-03-30T14:05:41 IST">
+      <class name="com.snapdeal.testcases.LoginTest">
+        <test-method status="PASS" signature="browserInitiate(java.lang.String)[pri:0, instance:com.snapdeal.testcases.LoginTest@7d0587f1]" name="browserInitiate" is-config="true" duration-ms="11225" started-at="2020-03-30T14:05:20 IST" finished-at="2020-03-30T14:05:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInitiate -->
+        <test-method status="PASS" signature="checkScrollDown()[pri:1, instance:com.snapdeal.testcases.LoginTest@7d0587f1]" name="checkScrollDown" duration-ms="2047" started-at="2020-03-30T14:05:31 IST" finished-at="2020-03-30T14:05:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkScrollDown -->
+        <test-method status="PASS" signature="validateTitle()[pri:2, instance:com.snapdeal.testcases.LoginTest@7d0587f1]" name="validateTitle" duration-ms="61" started-at="2020-03-30T14:05:34 IST" finished-at="2020-03-30T14:05:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method status="PASS" signature="validateUserLogin()[pri:3, instance:com.snapdeal.testcases.LoginTest@7d0587f1]" name="validateUserLogin" duration-ms="6165" started-at="2020-03-30T14:05:34 IST" finished-at="2020-03-30T14:05:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserLogin -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.snapdeal.testcases.LoginTest@7d0587f1]" name="quit" is-config="true" duration-ms="974" started-at="2020-03-30T14:05:40 IST" finished-at="2020-03-30T14:05:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.snapdeal.testcases.LoginTest -->
+    </test> <!-- Chrome test -->
+  </suite> <!-- Suite -->
+</testng-results>

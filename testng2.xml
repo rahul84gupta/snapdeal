@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- <suite name="Suite" > -->
+<suite name="Suite"  parallel="tests"  thread-count="2">
+<!--   thread-count="2" -->
+
+	<listeners>
+		<listener class-name="com.snapdeal.utility.ExtentReporterNG" />
+	</listeners>
+	<test name="Chrome test" preserve-order="true">
+	
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<!-- <class name="com.snapdeal.testcases.ProfileUpdateTest"/> -->
+			<class name="com.snapdeal.testcases.LoginTest" />
+			<class name="com.snapdeal.testcases.HomePageTest" />
+			
+		</classes>
+		
+	</test> <!-- Test -->
+
+	<test name="Firefox test" preserve-order="true">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.snapdeal.testcases.LoginTest" />
+			<class name="com.snapdeal.testcases.HomePageTest" />
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->
