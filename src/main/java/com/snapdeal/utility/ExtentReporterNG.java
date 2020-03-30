@@ -29,7 +29,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 public class ExtentReporterNG  implements IReporter {
 
 	private static final String OUTPUT_FOLDER = "test-output";
-	private static final String FILE_NAME = "Shah1_Extent.html";
+	private static final String FILE_NAME = "Report_Extent.html";
 
 	private ExtentReports extent;
 

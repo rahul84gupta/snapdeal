@@ -12,9 +12,9 @@
 		<parameter name="browser" value="chrome" />
 		<classes>
 			<class name="com.snapdeal.testcases.LoginTest"/>
-<!-- 			<class name="com.snapdeal.testcases.HomePageTest"/>
+			<class name="com.snapdeal.testcases.HomePageTest"/>
 			<class name="com.snapdeal.testcases.ProductTest"/>
-			<class name="com.snapdeal.testcases.ProfileUpdateTest" /> -->
+			<class name="com.snapdeal.testcases.ProfileUpdateTest" />
 		</classes>
 		
 	</test> <!-- Test -->
