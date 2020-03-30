@@ -17,13 +17,13 @@ public class ProfileUpdate extends Common {
 	}
 	
 	@FindBy(xpath="//span[contains(text(),'Edit')]")
-	 WebElement clickOnEdit;
+	private WebElement clickOnEdit;
 	
 	@FindBy(xpath="//textarea[@id='address']")
-	WebElement address;
+	private WebElement address;
 	
 	@FindBy(xpath="//span[@class='button-text']")
-	WebElement clickSave;
+	private WebElement clickSave;
 	
 	public void print() {
 		System.out.println("printing print method");

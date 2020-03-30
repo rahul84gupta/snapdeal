@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -30,27 +30,22 @@ public class HomePageTest{
 		com = new Common();
 		driver = com.initiateBrowser(browser);
 		login = new Login(driver);
-		home = login.validateLogin(com.prop.getProperty("username"), com.prop.getProperty("password"));
+		home = login.validateLogin(com.prop.getProperty("UserName"), com.prop.getProperty("Password"));
 	}
 
-	@Test(enabled=false)	
+	@Test(priority=1)	
 	public void validatePageTitle() {
-		System.out.println("Title " );
 		String Title= home.getPageTitle();
 		String TitleMatch=
 				"Login or Register at Snapdeal - Create Account to Get Daily Alert on Deals & Products in Your City";
-		System.out.println("Title---->  " + Title);
 		Assert.assertEquals(Title.trim(), TitleMatch.trim());
 	}
 
-	@Test(enabled=false)	
-	public void validateTag() {
-		System.out.println("I am in home page");
+	@Test(priority=2)	
+	public void validateTag() throws InterruptedException {
+		Thread.sleep(2000);
 		String tag= home.tagLineText();
 		String ExpectedTag="India's Fastest Online Shopping Destination";
-		System.out.println(tag);
-//		String actuals="India's Fastest Online Shopping Destination";
-//		String compare= home.tagLineText().trim();
 		Assert.assertEquals(tag.trim(),ExpectedTag.trim());
 	}
 
@@ -60,7 +55,7 @@ public class HomePageTest{
 		product = home.selectingSecondCheapProduct(driver);
 	}
 
-	@AfterTest
+	@AfterClass
 	public void tearDown() {
 		{	
 			driver.close();

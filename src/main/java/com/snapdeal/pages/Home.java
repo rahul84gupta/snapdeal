@@ -21,22 +21,22 @@ public class Home extends Common {
 
 	//span[@class='topHooks fastestDel lfloat fastestDelivery']
 	@FindBy(xpath = "//div[@id='sdHeader']/div[4]/section/div/span[1]")
-	WebElement tagLine;
+	private WebElement tagLine;
 
 	@FindBy(xpath = "//span[@class='cartQuantity']")
-	WebElement quantity;
+	private WebElement quantity;
 
 	@FindBy(id = "inputValEnter")
-	WebElement searchTextbox;
+	private WebElement searchTextbox;
 
 	@FindBy(xpath = "//span[contains(text(),'Search') and @class='searchTextSpan']")
-	WebElement clickOnSearch;
+	private WebElement clickOnSearch;
 
 	@FindBy(xpath = "//div[@class='sort-selected']")
-	WebElement clickforsort;
+	private WebElement clickforsort;
 
 	@FindBy(xpath = "//li[@class='search-li'][2]")
-	WebElement sortLow;
+	private WebElement sortLow;
 
 	@FindBy(xpath = "//div[@class='sort-list hidden']/following::section[1]/div[2]")
 	List<WebElement> productsList;

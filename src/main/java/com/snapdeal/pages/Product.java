@@ -17,16 +17,16 @@ public class Product{
 	}
 
 	@FindBy(xpath = "//*[@id='add-cart-button-id']")
-	WebElement addCart;
+	private WebElement addCart;
 
 	@FindBy(xpath = "//span[@class='total-rating showRatingTooltip']")
-	WebElement rating;
+	private WebElement rating;
 	
 	@FindBy(xpath="//a[@class='btn marR5']")
-	WebElement proceedCheckOut;
+	private WebElement proceedCheckOut;
 	
 	@FindBy(xpath="//span[@class='click-tab']")
-	WebElement change;
+	private WebElement change;
 	
 	
 

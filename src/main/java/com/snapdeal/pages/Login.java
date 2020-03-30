@@ -17,29 +17,31 @@ public class Login {
 	}
 
 	@FindBy(id = "userName")
-	WebElement UserName;
+	private WebElement UserName;
 
 	@FindBy(xpath = "//input[@id='j_password_login_uc' and @type='password']")
-	WebElement Password;
+	private WebElement Password;
 
 	@FindBy(xpath = "//a[contains(text(),'Account')]")
-	WebElement ClickAccount;
+	private WebElement ClickAccount;
 
 	@FindBy(xpath = "//div[@class='accountInner']")
-	WebElement hover;
+	private WebElement hover;
 
 	@FindBy(xpath = "//button[@id='submitLoginUC']")
-	WebElement clickSubmit;
+	private WebElement clickSubmit;
 
 //	@FindBy(xpath = "//a[contains(text(),'Account')]")
 	@FindBy(xpath = "//div[@class='dropdownAccountNonLoggedIn']/div/descendant::a[contains(text(),'Account')]")
-	WebElement clicktoaccount;
+	private WebElement clicktoaccount;
+	@FindBy(id="pushDenied")
+	private WebElement push;
 
 	@FindBy(xpath = "//button[@id='checkUser']")
-	WebElement clickContinue;
+	private WebElement clickContinue;
 
 	@FindBy(xpath = "//p[@id='back-top']")
-	WebElement topArrow;
+	private WebElement topArrow;
 
 	public void hover() {
 		Utility.fluentWait(driver, hover);
@@ -83,19 +85,21 @@ public class Login {
 	}
 
 	public Home validateLogin(String UserName, String Password) throws InterruptedException, IOException {
-		try {
+		try {			
+			if(push.isEnabled()) {
+				push.click();
+			}} catch (Exception e) {
+			}				
 			hover();
 			Utility.explicitWait(driver, clicktoaccount);//
 			clickAccount();
+			System.out.println("user="+UserName);
 			setUserName(UserName);
 			clickContinue();
 			setPassword(Password);
 			clickLogin();
 
-		} catch (Exception e) {
-			e.printStackTrace();
-
-		}
+		
 	
 		return new Home(driver);
 	}

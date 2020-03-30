@@ -32,7 +32,7 @@ public class ProductTest {
 		com = new Common();
 		driver = com.initiateBrowser(browser);
 		login = new Login(driver);
-		home = login.validateLogin(com.prop.getProperty("username"), com.prop.getProperty("password"));
+		home = login.validateLogin(com.prop.getProperty("UserName"), com.prop.getProperty("Password"));
 		product = home.selectingSecondCheapProduct(driver);
 	}
 

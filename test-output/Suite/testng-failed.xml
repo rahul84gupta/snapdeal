@@ -7,13 +7,13 @@
   <test thread-count="5" name="Chrome test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.snapdeal.testcases.LoginTest">
+      <class name="com.snapdeal.testcases.HomePageTest">
         <methods>
-          <include name="validateUserLogin"/>
-          <include name="quit"/>
-          <include name="browserInitiate"/>
+          <include name="validateTag"/>
+          <include name="tearDown"/>
+          <include name="browserInvoke"/>
         </methods>
-      </class> <!-- com.snapdeal.testcases.LoginTest -->
+      </class> <!-- com.snapdeal.testcases.HomePageTest -->
     </classes>
   </test> <!-- Chrome test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
